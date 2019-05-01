@@ -23,6 +23,7 @@ public class UrlFilter implements Filter {
 			throws IOException, ServletException {
 		String fwdVal=null;
 		RequestDispatcher rd=null;
+		//reading value of btn from UI
 		fwdVal=req.getParameter("btn");
 		if(fwdVal.equals("Login")) {
 			logger.debug("sent for login.jsp");
