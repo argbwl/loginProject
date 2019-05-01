@@ -29,6 +29,7 @@ public class DoServlet extends HttpServlet {
 	
 	@Override
 	public void doPost(HttpServletRequest req, HttpServletResponse res) throws ServletException, IOException {
+		//reading value of urlAction of user request session
 		String urlAction=req.getParameter("urlAction");
 		if(urlAction.equals("SignUp")) {
 			logger.info("signUp link invoked");
