@@ -18,7 +18,7 @@ public class SignUpDao {
 	public void checkConnection() throws Exception {
 		//InitialContext ic = new InitialContext();
 		//ds = (DataSource) ic.lookup("java:/comp/env/loginProjectJndi");
-
+		//getting connection
 		Connection con = ds.getConnection();
 		if (con != null) {
 			logger.info("connection created");
